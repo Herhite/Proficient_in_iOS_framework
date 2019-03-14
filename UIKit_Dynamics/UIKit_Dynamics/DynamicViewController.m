@@ -10,6 +10,8 @@
 #import "DynamicDetailController.h"
 #import "CollisionsController.h"
 
+#import "ChangeRootViewController.h"
+
 @interface DynamicViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *table;
@@ -25,20 +27,58 @@
     // Do any additional setup after loading the view.
     self.title = @"UIKIT Dynamics";
     [self.view addSubview:self.table];
+//    UIButton *button = [self getFootView];
+//    [self.view addSubview:button];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.dataSource = [NSMutableArray arrayWithArray:@[@"Gravity 重力",@"Collisions 碰撞效果",@"Attachments 附着效果"]];
+    
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeRootVC2) name:@"HEHHEH" object:nil];
+}
+
 - (UITableView *)table{
     if (!_table) {
         _table = [[UITableView alloc]initWithFrame:CGRectMake(0, SafeAreaTopHight, kScreenWidth, kScreenHeight-SafeAreaTopHight-SafeAreaBoomHight)style:UITableViewStylePlain];
         _table.delegate = self;
         _table.dataSource = self;
         _table.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _table.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-        
+//        _table.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+        _table.tableFooterView = [self getFootView];
     }
     return _table;
 }
+
+-(UIButton *)getFootView{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 100, kScreenWidth, 44);
+    [button addTarget:self action:@selector(changeRootVC) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"切换根视图控制器" forState:UIControlStateNormal];
+    [button setTitleColor:ZARandomColor forState:UIControlStateNormal];
+    return button;
+}
+- (void)changeRootVC2{
+    ZALog(@"呵呵呵");
+}
+
+- (void)changeRootVC{
+    DynamicViewController *rootVC = [[DynamicViewController alloc]init];
+//    __strong typeof(self)strongSelf = self;
+    [UIApplication sharedApplication].keyWindow.rootViewController = rootVC;
+//    [self presentViewController:rootVC animated:YES completion:nil];
+//    __weak typeof(self)weakSelf = self;
+//    [self dismissViewControllerAnimated:NO completion:^{
+////        __strong typeof(weakSelf)strongSelf = weakSelf;
+//
+//    }];
+}
+
+- (void)dealloc{
+    ZALog(@"dealloc");
+}
+
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSource.count;

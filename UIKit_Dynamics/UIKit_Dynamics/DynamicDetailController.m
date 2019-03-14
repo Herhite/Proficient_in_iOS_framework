@@ -37,6 +37,8 @@
     [self.animator removeAllBehaviors];
     //item 为动画作用的对象
     UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc]initWithItems:@[ballItem,ballItem2]];
+    
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"HEHHEH" object:nil];
     /*
      CGVector 表示 方向的结构体
      struct CGVector {

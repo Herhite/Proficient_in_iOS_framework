@@ -19,6 +19,7 @@
 		E7A15549219D51390097EDBB /* DynamicDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A15548219D51390097EDBB /* DynamicDetailController.m */; };
 		E7A1554C219D60E20097EDBB /* CollisionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1554B219D60E20097EDBB /* CollisionsController.m */; };
 		E7A1554F219D751F0097EDBB /* AttachmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1554E219D751F0097EDBB /* AttachmentController.m */; };
+		E7F87BC521B7ECB4002C11E5 /* ChangeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F87BC421B7ECB4002C11E5 /* ChangeRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		E7A1554B219D60E20097EDBB /* CollisionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollisionsController.m; sourceTree = "<group>"; };
 		E7A1554D219D751F0097EDBB /* AttachmentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttachmentController.h; sourceTree = "<group>"; };
 		E7A1554E219D751F0097EDBB /* AttachmentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttachmentController.m; sourceTree = "<group>"; };
+		E7F87BC321B7ECB4002C11E5 /* ChangeRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeRootViewController.h; sourceTree = "<group>"; };
+		E7F87BC421B7ECB4002C11E5 /* ChangeRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				E7A15543219D46950097EDBB /* Define.h */,
 				E7A1550C219D3F530097EDBB /* ViewController.h */,
 				E7A1550D219D3F530097EDBB /* ViewController.m */,
+				E7F87BC321B7ECB4002C11E5 /* ChangeRootViewController.h */,
+				E7F87BC421B7ECB4002C11E5 /* ChangeRootViewController.m */,
 				E7A15544219D4E830097EDBB /* DynamicViewController.h */,
 				E7A15545219D4E830097EDBB /* DynamicViewController.m */,
 				E7A15547219D51390097EDBB /* DynamicDetailController.h */,
@@ -292,6 +297,7 @@
 				E7A1550B219D3F530097EDBB /* AppDelegate.m in Sources */,
 				E7A1554C219D60E20097EDBB /* CollisionsController.m in Sources */,
 				E7A1554F219D751F0097EDBB /* AttachmentController.m in Sources */,
+				E7F87BC521B7ECB4002C11E5 /* ChangeRootViewController.m in Sources */,
 				E7A15549219D51390097EDBB /* DynamicDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
