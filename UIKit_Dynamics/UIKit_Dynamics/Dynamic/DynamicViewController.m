@@ -53,7 +53,7 @@
 -(UIButton *)getFootView{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 100, kScreenWidth, 44);
-    [button addTarget:self action:@selector(changeRootVC) forControlEvents:UIControlEventTouchUpInside];
+//    [button addTarget:self action:@selector(changeRootVC) forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"切换根视图控制器" forState:UIControlStateNormal];
     [button setTitleColor:ZARandomColor forState:UIControlStateNormal];
     return button;

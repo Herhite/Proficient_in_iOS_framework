@@ -9,11 +9,20 @@
 #ifndef Define_h
 #define Define_h
 
-#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+//屏幕宽度
+#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
+//屏幕高度
+#define kScreenHeight  [[UIScreen mainScreen] bounds].size.height
+//屏幕比例
+#define ScreenScale SCREEN_WIDTH/375.0
+//根据当前屏幕宽度得到宽度
+#define pixw(p) (SCREEN_WIDTH/375.0)*p
+#define pixh(p) (SCREEN_HEIGHT/667.0)*p
 //iPhone X 顶部和底部安全操作区域
 #define SafeAreaTopHight (kScreenHeight == 812.0?88:64)
 #define SafeAreaBoomHight (kScreenHeight == 812.0?34:0)
+
+
 
 //是否是iPhone X
 #define IS_IPHONE_X (kScreenHeight == 812.0?YES:NO)

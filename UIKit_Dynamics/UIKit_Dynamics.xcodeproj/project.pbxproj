@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72742D82241128700681E4D /* UIView+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E72742D72241128700681E4D /* UIView+Property.m */; };
 		E7A1550B219D3F530097EDBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1550A219D3F530097EDBB /* AppDelegate.m */; };
 		E7A1550E219D3F530097EDBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1550D219D3F530097EDBB /* ViewController.m */; };
 		E7A15511219D3F530097EDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A1550F219D3F530097EDBB /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E72742D62241128700681E4D /* UIView+Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Property.h"; sourceTree = "<group>"; };
+		E72742D72241128700681E4D /* UIView+Property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Property.m"; sourceTree = "<group>"; };
 		E7A15506219D3F530097EDBB /* UIKit_Dynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKit_Dynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A15509219D3F530097EDBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7A1550A219D3F530097EDBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E72742D52241100100681E4D /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				E7F87BC321B7ECB4002C11E5 /* ChangeRootViewController.h */,
+				E7F87BC421B7ECB4002C11E5 /* ChangeRootViewController.m */,
+				E7A15544219D4E830097EDBB /* DynamicViewController.h */,
+				E7A15545219D4E830097EDBB /* DynamicViewController.m */,
+				E7A15547219D51390097EDBB /* DynamicDetailController.h */,
+				E7A15548219D51390097EDBB /* DynamicDetailController.m */,
+				E7A1554A219D60E20097EDBB /* CollisionsController.h */,
+				E7A1554B219D60E20097EDBB /* CollisionsController.m */,
+				E7A1554D219D751F0097EDBB /* AttachmentController.h */,
+				E7A1554E219D751F0097EDBB /* AttachmentController.m */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
 		E7A154FD219D3F530097EDBB = {
 			isa = PBXGroup;
 			children = (
@@ -124,16 +144,9 @@
 				E7A15543219D46950097EDBB /* Define.h */,
 				E7A1550C219D3F530097EDBB /* ViewController.h */,
 				E7A1550D219D3F530097EDBB /* ViewController.m */,
-				E7F87BC321B7ECB4002C11E5 /* ChangeRootViewController.h */,
-				E7F87BC421B7ECB4002C11E5 /* ChangeRootViewController.m */,
-				E7A15544219D4E830097EDBB /* DynamicViewController.h */,
-				E7A15545219D4E830097EDBB /* DynamicViewController.m */,
-				E7A15547219D51390097EDBB /* DynamicDetailController.h */,
-				E7A15548219D51390097EDBB /* DynamicDetailController.m */,
-				E7A1554A219D60E20097EDBB /* CollisionsController.h */,
-				E7A1554B219D60E20097EDBB /* CollisionsController.m */,
-				E7A1554D219D751F0097EDBB /* AttachmentController.h */,
-				E7A1554E219D751F0097EDBB /* AttachmentController.m */,
+				E72742D62241128700681E4D /* UIView+Property.h */,
+				E72742D72241128700681E4D /* UIView+Property.m */,
+				E72742D52241100100681E4D /* Dynamic */,
 				E7A1550F219D3F530097EDBB /* Main.storyboard */,
 				E7A15512219D3F550097EDBB /* Assets.xcassets */,
 				E7A15514219D3F550097EDBB /* LaunchScreen.storyboard */,
@@ -298,6 +311,7 @@
 				E7A1554C219D60E20097EDBB /* CollisionsController.m in Sources */,
 				E7A1554F219D751F0097EDBB /* AttachmentController.m in Sources */,
 				E7F87BC521B7ECB4002C11E5 /* ChangeRootViewController.m in Sources */,
+				E72742D82241128700681E4D /* UIView+Property.m in Sources */,
 				E7A15549219D51390097EDBB /* DynamicDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
